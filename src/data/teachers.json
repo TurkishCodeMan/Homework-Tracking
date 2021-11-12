@@ -1,0 +1,17 @@
+[
+    {
+        "name":"Mehmet",
+        "surname":"Tatlıses",
+        "id":"1284",
+        "email":"mehmet@tatlises.com",
+        "password":"4455"
+    },
+    {
+        "name":"Hasan",
+        "surname":"Can",
+        "id":"1274",
+        "email":"hasan@can.com",
+        "password":"4455",
+        "students":[]
+    }
+]

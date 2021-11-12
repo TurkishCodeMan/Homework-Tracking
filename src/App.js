@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy, Suspense } from 'react'
+
+import { FullPageSpinner } from 'shared/components/lib';
+
+import { useAuth } from 'context/AuthContext';
+
+const UnAuthenticatedApp = lazy(() => import("./UnAuthenticatedApp"));
+const AuthenticatedApp = lazy(() => import("./AuthenticatedApp"));
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const { user } = useAuth();
+    console.log(user)
+    return (
+        <Suspense fallback={<FullPageSpinner />}>
+            {
+                user ? (
+                    <AuthenticatedApp/>
+                ) : <UnAuthenticatedApp />
+
+            }
+        </Suspense>
+    )
+
 }
 
-export default App;
+export { App };

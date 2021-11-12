@@ -1,0 +1,26 @@
+body[data-theme="light"] {
+    --colors-main: #f7f7f7;
+    --colors-background: white;
+    --menu-item: black;
+    --menu-item-hover: white;
+    --menu-item-theme-toggler: rgb(31, 31, 30);
+    --colors-primary-button: rebeccapurple;
+    --colors-primary-text: rgb(0, 0, 0);
+    --colors-item: #fff;
+    --colors-text: "black";
+    --colors-top-menu:#fff700;
+  }
+  
+  body[data-theme="dark"] {
+    --colors-main: #4b4e69;
+    --colors-background: rgb(61, 67, 83);
+    --menu-item: white;
+    --menu-item-hover: black;
+    --menu-item-theme-toggler: rgb(9, 19, 20);
+    --colors-primary-button: purple;
+    --colors-primary-text: white;
+    --colors-item: #797e93;
+    --colors-text: #fff;
+    --colors-top-menu:#ffc200;
+  }
+  

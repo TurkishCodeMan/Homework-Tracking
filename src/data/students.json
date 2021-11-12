@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Ahmet",
+        "surname": "Kaymaz",
+        "email": "ahmet@kaymaz.com",
+        "password": "4455",
+        "id": "1254",
+        "teacherId": "1284"
+     
+    },
+    {
+        "name": "Fuat",
+        "surname": "Aslan",
+        "email": "fuat@aslan.com",
+        "password": "4455",
+        "id": "1585",
+        "teacherId": "1284"
+     
+    },
+    {
+        "name": "Efecan",
+        "surname": "Koç",
+        "email": "efecan@koc.com",
+        "password": "4455",
+        "id": "1586",
+        "teacherId": "1284"
+     
+    },
+    {
+        "name": "Çağatay",
+        "surname": "Can",
+        "email": "cagatay@can.com",
+        "password": "4455",
+        "id": "1587",
+        "teacherId": "1274"
+     
+    },
+    {
+        "name": "Gökçe",
+        "surname": "Kılıç",
+        "email": "gokce@kilic.com",
+        "password": "4455",
+        "id": "1588",
+        "teacherId": "1274"
+     
+    }
+]
