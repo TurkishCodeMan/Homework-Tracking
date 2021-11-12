@@ -35,11 +35,13 @@
 ### 💯npm start
 
 
-### Logout için profile Foto tıklayın ve açılan dropdowndan logout olunuz
+#### Logout için profile Foto tıklayın ve açılan dropdowndan logout olunuz
 
 
-### Öğretmen Sınıfları Ve Ev Ödevleri Gibi Veriler LocalStorageda depolanmıştır.Kontrolleri /data içindedir.
-  
+#### Öğretmen Sınıfları Ve Ev Ödevleri Gibi Veriler LocalStorageda depolanmıştır.Kontrolleri /data içindedir.
+
+
+#### Proje render index.js den başlıyor App.js de Auth ve Unauth süreçlerini ayırıyor authentication mantığı ./utils/auth-provider içinde tanımlanıp ./context AuthContext te kullanılmıştır.
 
 
 ## Backend
