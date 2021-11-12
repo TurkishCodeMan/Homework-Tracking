@@ -34,6 +34,11 @@
 ### 💯 npm install
 ### 💯npm start
 
+
+### Logout için profile Foto tıklayın ve açılan dropdowndan logout olunuz
+
+
+### Öğretmen Sınıfları Ve Ev Ödevleri Gibi Veriler LocalStorageda depolanmıştır.Kontrolleri /data içindedir.
   
 
 
@@ -45,15 +50,17 @@
   #### Login için Gerekli olan Bilgiler (Diğer öğrenciler için src/data/students.json)
   
 
-👨‍💼  Admin Login :
+👨‍💼  Admin Login (Students veya Teachers Seçmeyin(Not Check)) :
 
 		Email:admin
 		Password:admin
+        
+     
 
 
 
 
- 📜  Students Login :
+ 📜  Students Login (Check Students):
 	
 		Ahmet Kaymaz
 		Email:ahmet@kaymaz.com
@@ -69,7 +76,7 @@
 
 	
 	  
- 📜  Teachers Login :
+ 📜  Teachers Login (Check Teachers):
 	
 		Mehmet Tatlıses
 		Email:mehmet@tatlises.com
