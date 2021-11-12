@@ -4,7 +4,7 @@
 import { jsx } from '@emotion/react';
 import React from "react"
 import { useAuth } from "context/AuthContext"
-import {  useUserHomework } from 'server-state/Homeworks';
+import { useUserHomework } from 'server-state/Homeworks';
 import HomeworkCard from './HomeworkCard';
 import { Spinner } from 'shared/components/lib';
 
@@ -15,7 +15,7 @@ function MyHomeworks() {
     const { homeworks, isLoading } = useUserHomework({ userId: user.id })
 
 
-    
+
 
 
     return (
@@ -28,14 +28,20 @@ function MyHomeworks() {
                         ? <Spinner />
                         : homeworks.map(homeWork => {
                             return (
-                                <HomeworkCard key={homeWork.id} homeWork={homeWork}/>
+                                <HomeworkCard key={homeWork.id} homeWork={homeWork} />
                             )
                         }
 
 
                         )
+
+
                 }
+
             </ul>
+            {
+                homeworks.length === 0 && 'Not Found Homeworks'
+            }
         </div>
     )
 }

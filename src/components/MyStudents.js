@@ -15,12 +15,12 @@ import { useUserStudent } from 'server-state/Teachers';
 function MyStudents() {
     const { user } = useAuth()
 
-    const { students, isLoading } = useUserStudent({userId:user.id})
+    const { students, isLoading } = useUserStudent({ userId: user.id })
 
     const [value, onChange] = React.useState(new Date());
     const [student, setStudent] = React.useState(null);
 
-    const { mutateAsync: addHomework,isLoading:isLoadingAdd } = useHomeworkCreate(user.id)
+    const { mutateAsync: addHomework, isLoading: isLoadingAdd } = useHomeworkCreate(user.id)
 
     function handleSubmit(event) {
         event.preventDefault()
@@ -50,6 +50,9 @@ function MyStudents() {
                         })
                     }
                 </ul>
+                {
+                    students.length === 0 && 'Not Found Homeworks'
+                }
             </div>
 
             <div>
@@ -104,10 +107,10 @@ function MyStudents() {
                             </div>
 
                             <button css={{ marginTop: '20px' }} type="submit">
-                            {
-                                isLoadingAdd?<Spinner/>:<span>Submit</span>
-                            }
-                            
+                                {
+                                    isLoadingAdd ? <Spinner /> : <span>Submit</span>
+                                }
+
                             </button>
                         </form>
                     </ModalContents>
