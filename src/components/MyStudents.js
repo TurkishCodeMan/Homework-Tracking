@@ -85,7 +85,7 @@ function MyStudents() {
                                     name="profiles"
                                     defaultValue="" arrow={<h1 css={{ padding: '0px' }}>Select Students ▼</h1>}
                                     css={{
-                                        color: 'var(--colors-main)',
+                                        color: 'black',
                                         display: 'flex',
                                         alignItems: 'center',
                                     }}
